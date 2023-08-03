@@ -3,7 +3,7 @@ def call(body) {
   echo "Start Sonar Scans"
   def scannerHome = tool 'ibt-sonarqube';
   
-  withSonarQubeEnv(credentialsId: 'SQ-student', installationName: 'IBT sonarqube') {
+  withSonarQubeEnv(credentialsId: 'student-sonar-token', installationName: 'IBT sonarqube') {
     sh "${scannerHome}/bin/sonar-scanner"
   }
 }
