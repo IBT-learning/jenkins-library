@@ -14,6 +14,6 @@ def call(body, node) {
                                                     cd /opt/tomcat/apache-tomcat-9.0.82/webapps
                                                     java -cp ibt-maven-2.9-SNAPSHOT.jar com.ibt.app/App
                                                     '''
-        echo "${node} deployment Successful"
+        echo "${remote.name} deployment successful"
     }
 }
