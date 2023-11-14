@@ -11,9 +11,7 @@ def call(node) {
         echo "Connected to remote mode [${remote.name}]..."
         sh '''
               java --version
-              ls -lrst /opt/tomcat/apache-tomcat-9.0.82
-              cd /opt/tomcat/apache-tomcat-9.0.82/webapps
-              java -cp ibt-maven-2.9-SNAPSHOT.jar com.ibt.app/App
+              uname -a
            '''
         echo "${remote.name} connection successful"
     }
