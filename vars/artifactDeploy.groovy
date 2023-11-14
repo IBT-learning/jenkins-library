@@ -1,4 +1,4 @@
-def call(node) {
+def call(Map node) {
 
     def remote = [:]
     remote.name = node.name
