@@ -1,4 +1,4 @@
-def call(body, node) {
+def call(node) {
 
     def remote = [:]
     remote.name = node.name
